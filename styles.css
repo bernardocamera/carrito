@@ -1,0 +1,244 @@
+body {
+    background-color: #2d1369;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    color: #f5f5f5;
+}
+a {
+    color: #81a1c1;
+    text-decoration: none;
+}
+a:hover {
+    color: #88c0d0;
+}
+.main-content {
+    background-color: #2d1369;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    background: #2d1369;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos para el contenedor de productos en oferta */
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el número de columnas */
+    gap: 20px; /* Espacio entre productos */
+    max-width: 900px; /* Ancho máximo de la cuadrícula */
+    margin: 20px auto; /* Centra la cuadrícula */
+}
+
+/* Estilos para cada producto */
+.product {
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen del producto */
+.product img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 150px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen si es necesario */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Títulos y texto */
+.product h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0 5px; /* Espaciado uniforme */
+}
+
+.product p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0; /* Espaciado uniforme */
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1200px) {
+    .offer-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 900px) {
+    .offer-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    .offer-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
+    }
+}
+
+
+
+/* Estilos para el formulario de contacto*/
+#contactForm {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario */
+    background: #2c2f33;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+    margin-bottom: 15px; /* Espacio entre campos */
+}
+
+/* Estilos para las etiquetas y campos de entrada */
+label {
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+    display: block; /* Asegura que la etiqueta esté en su propia línea */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Campo ocupa el 100% del ancho */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para el botón de envío */
+button {
+    background-color: #007bff; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+/* Media Queries para hacer el formulario responsivo */
+@media (max-width: 600px) {
+    #contactForm {
+        padding: 15px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    button {
+        margin-top: 10px; /* Espacio entre el último campo y el botón */
+    }
+}
+
+
+
+
+
+
+
+
+/* Contenedor para centrar y ajustar el iframe del mapa de cómo llegar*/
+.map-container {
+    max-width: 800px; /* Ajusta el ancho máximo según el diseño */
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Estilos para el iframe del mapa de cóno llegar*/
+.map-container iframe {
+    width: 100%; /* Asegura que el iframe ocupe todo el ancho del contenedor */
+    height: 400px; /* Ajusta la altura según necesites */
+    border: 0; /* Elimina el borde */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del iframe */
+}
+
+/* Ajustes para dispositivos móviles (Responsivo)*/
+@media (max-width: 600px) {
+    .map-container iframe {
+        height: 250px; /* Reduce la altura en pantallas pequeñas */
+    }
+}
+
+
+/* Clase base para la imagen principal de la pagina*/
+.foto-principal {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    max-width: 400px; /* Limita el tamaño máximo */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+    border: 5px solid #f2f2f2; /* Borde blanco o de color suave */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto de zoom al pasar el mouse */
+.foto-principal:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+    opacity: 0.9; /* Reduce la opacidad para un efecto sutil */
+}
+
+/* Efecto de blanco y negro */
+.foto-principal.grayscale {
+    filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+}
+
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #2c2f33; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.footer h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #f5f5f5; /* Color de encabezado claro */
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer .social-media {
+    margin-top: 10px; /* Espacio entre los datos de contacto y las redes sociales */
+}
+
+.footer .social-media a {
+    color: #81a1c1; /* Color de los enlaces de redes sociales */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer .social-media a:hover {
+    color: #88c0d0; /* Color más claro al pasar el mouse */
+}
