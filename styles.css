@@ -75,6 +75,48 @@ a:hover {
     margin: 5px 0; /* Espaciado uniforme */
 }
 
+
+.boton-agregar-carrito {
+    color: #ffffff; /* Color blanco para el texto */
+    border-radius: 15px;
+    background-color: #2d1369;
+    box-shadow: 0 4px #1e4874; /* Sombra inicial */
+}
+
+
+.boton-agregar-carrito:active {
+    color: #ffffff; /* Color blanco para el texto */
+    background-color: #14092e; /* Un tono más oscuro para el presionado */
+    box-shadow: 0 2px #1e4874; /* Reduce la sombra */
+    transform: translateY(2px); /* Simula el desplazamiento hacia abajo */
+}
+
+#boton-borrar {
+    background-color: #ffffff; 
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#boton-borrar:active{
+    color: #14092e; 
+    background-color: #f2f2f2; /* Un tono más oscuro para el presionado */
+    box-shadow: 0 2px #1e4874; /* Reduce la sombra */
+    transform: translateY(2px); /* Simula el desplazamiento hacia abajo */
+
+}
+
+#boton-pagar {
+    background-color: #ffffff; 
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#boton-pagar:active{
+    color: #14092e; 
+    background-color: #f2f2f2; /* Un tono más oscuro para el presionado */
+    box-shadow: 0 2px #1e4874; /* Reduce la sombra */
+    transform: translateY(2px); /* Simula el desplazamiento hacia abajo */
+
+}
+
 /* Media Queries para hacer el diseño responsivo */
 @media (max-width: 1200px) {
     .offer-grid {
