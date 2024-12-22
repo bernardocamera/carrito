@@ -137,6 +137,35 @@ a:hover {
 }
 
 
+/*Estilos para las reseñas*/
+
+.reseñas-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #2d1369;
+}
+.reseña {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    background-color: #2d1369;
+}
+.reseña:last-child {
+    border-bottom: none;
+    background-color: #2d1369;
+}
+.reseña h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+.reseña p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
 
 /* Estilos para el formulario de contacto*/
 #contactForm {
@@ -195,11 +224,6 @@ button:hover {
         margin-top: 10px; /* Espacio entre el último campo y el botón */
     }
 }
-
-
-
-
-
 
 
 
