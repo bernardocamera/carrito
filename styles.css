@@ -140,30 +140,66 @@ a:hover {
 /*Estilos para las reseñas*/
 
 .reseñas-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2e2e3e;
     border-radius: 8px;
-    background-color: #2d1369;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+.reseñas-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Cambiado a blanco */
+}
+
+/* Diseño de grilla */
+.reseñas-container .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
 .reseña {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
-    background-color: #2d1369;
+    padding: 15px;
+    background-color: #3e3e4e;
+    border-left: 4px solid #ffffff; /* Cambiado a blanco */
+    border-radius: 4px;
 }
-.reseña:last-child {
-    border-bottom: none;
-    background-color: #2d1369;
-}
+
 .reseña h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #555;
+    margin: 0 0 10px;
+    color: #ffffff; /* Cambiado a blanco */
 }
+
 .reseña p {
-    margin: 5px 0 0;
-    font-size: 1rem;
+    margin: 0;
+}
+
+/* Enlace al inicio */
+a {
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    color: #ffffff; /* Cambiado a blanco */
+    text-decoration: none;
+    background-color: #3e3e4e;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #ffffff; /* Fondo blanco al pasar el ratón */
+    color: #1e1e2f; /* Texto oscuro para contraste */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 500px) {
+    .reseñas-container .grid {
+        grid-template-columns: 1fr; /* Una columna */
+    }
 }
 
 
